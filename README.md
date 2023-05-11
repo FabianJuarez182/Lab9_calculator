@@ -19,6 +19,6 @@ Link to try it out:
 ## Tests
 
 ```bash
-1. Run teztz
-`$ npm test
+1. Run tests
+`$ yarn test
 ```
