@@ -1,42 +1,174 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  width: 100%;
+  min-height: 100vh;
+}
+.App {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  height: 36rem;
+  background-color: #3b4664;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 25rem;
+  position: relative;
+  height: 36rem;
+}
+.screen {
+  background-color: #181f32;
+  height: 6rem;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: auto;
+  transition: background-color 1s ease-in-out;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.screen_content {
+  overflow-x: scroll;
+}
+.calc {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  position: relative;
+  left: 2px;
+  bottom: 40px;
+}
+.top {
+  height: 3.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-top: 1rem;
+  color: white;
+}
+.calc-text-container {
+  width: 50%;
+  height: 100%;
+}
+.screen {
+  color: white;
   text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 1rem;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 2.5rem;
+}
+.grid-container {
+  height: 25rem;
+  width: 100%;
+  padding: 1rem;
+  position: relative;
+  top: 1.3rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  grid-template-columns: 1fr 1fr 1fr 1frs;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  background-color: #252d44;
+  border-radius: 10px;
+  transition: background-color 1s ease-in-out;
+}
+.button {
+  height: 3.5rem;
+  width: 5rem;
+  border-radius: 10px;
+  border: none;
+  border-bottom: 4px solid #b6a397;
+  background-color: #eae3db;
+  font-family: 'League Spartan', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #42495b;
+  align-self: center;
+  justify-self: center;
+  cursor: pointer;
+  transition: background-color 1s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.delete {
+  background-color: #64719b;
+  border-bottom: 4px solid #425174;
+  color: white;
+  transition: background-color 1s ease-in-out;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+.delete:hover {
+  background-color: #a2b2e2;
+}
+.reset {
+  grid-column: 1;
+  height: 3.5rem;
+  border-radius: 10px;
+  border: none;
+  border-bottom: 4px solid #414e71;
+  background-color: #647299;
+  cursor: pointer;
+  color: white;
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 200;
+  font-size: 1.5rem;
+  transition: background-color 1s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reset:hover {
+  background-color: #a2b3e1;
+}
+.equals {
+  grid-column: 2;
+  height: 3.5rem;
+  border-radius: 10px;
+  border: none;
+  border-bottom: 4px solid #912417;
+  background-color: #d13f30;
+  cursor: pointer;
+  font-family: 'League Spartan', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: white;
+  transition: background-color 1s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.equals:hover {
+  background-color: #f96c5b;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.equals {
+  grid-column: 3;
+  height: 3.5rem;
+  border-radius: 10px;
+  border: none;
+  border-bottom: 4px solid #912417;
+  background-color: #d13f30;
+  cursor: pointer;
+  font-family: 'League Spartan', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: white;
+  transition: background-color 1s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.equals:hover {
+  background-color: #f96c5b;
 }

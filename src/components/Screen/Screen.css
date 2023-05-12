@@ -1,0 +1,14 @@
+.screen {
+    background-color: #181f32;
+    height: 6rem;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: auto;
+    transition: background-color 1s ease-in-out;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  .screen_content {
+    overflow-x: scroll;
+  }
