@@ -1,14 +1,23 @@
-import React from 'react'
+/* eslint-disable jsx-a11y/aria-role */
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import './Screen.css'
 
 function Screen({ value }) {
-  // Limitar la longitud del valor a 9 caracteres
   const truncatedValue = value.length > 9 ? 'ERROR' : value
+  const [, setValue] = useState('')
+  const handleChange = (event) => {
+    setValue(event.target.value)
+  }
 
   return (
     <div className="screen">
-      <p className="screen_content">{truncatedValue}</p>
+      <input
+        className="screen_content"
+        role="screen"
+        onChange={handleChange}
+        value={truncatedValue}
+      />
     </div>
   )
 }
