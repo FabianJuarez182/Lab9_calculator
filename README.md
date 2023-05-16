@@ -11,9 +11,9 @@ Link to try it out: https://jua21440calculator.netlify.app
 
 ## Installation
 ```bash
-1. Clone the repository: `$ git clone https://github.com/FabianJuarez182/Lab9_calculator.git`
-2. Install dependencies: `yarn install`
-3. Start the development server: `yarn dev`
+1. Clone the repository: $ git clone https://github.com/FabianJuarez182/Lab9_calculator.git
+2. Install dependencies: yarn install
+3. Start the development server: yarn dev
 ```
 
 ## Tests
