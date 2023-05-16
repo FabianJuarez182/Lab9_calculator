@@ -10,11 +10,11 @@ Link to try it out: https://jua21440calculator.netlify.app
 * yarn/npm
 
 ## Installation
-1. Clone the repository:
+1. Clone the repository
 ```bash $ git clone  https://github.com/FabianJuarez182/Lab9_calculator.git ```
-2. Install dependencies:
+2. Install dependencies
 ```bash yarn install ```
-3. Start the development server: 
+3. Start the development server
 ```bash yarn dev ```
 
 ## Tests
