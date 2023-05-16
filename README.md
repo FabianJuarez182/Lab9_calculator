@@ -22,7 +22,7 @@ Link to try it out: https://jua21440calculator.netlify.app
 1. Run tests
 `$ yarn test
 ```
-### Heading
+### Rubric
 - [x] (40 puntos) [Criterio subjetivo] Diseño de su interfaz
 - [x] (50 puntos) Implementación de +5 tests
 - [x] (15 puntos) Código es compliant con eslint-airbnb y la regla para puntos y comas fue definida
