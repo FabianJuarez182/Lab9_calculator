@@ -79,7 +79,7 @@ test('mod function', () => {
   fireEvent.click(getByRole('button', { name: '%' }))
   fireEvent.click(getByRole('button', { name: '2' }))
   fireEvent.click(getByRole('button', { name: '=' }))
-  expect(getByRole('screen')).toHaveDisplayValue('0')
+  expect(getByRole('screen')).toHaveDisplayValue('0.0800000')
 })
 
 
