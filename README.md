@@ -10,17 +10,15 @@ Link to try it out: https://jua21440calculator.netlify.app
 * yarn/npm
 
 ## Installation
-```bash
-1. Clone the repository: $ git clone https://github.com/FabianJuarez182/Lab9_calculator.git
-2. Install dependencies: yarn install
-3. Start the development server: yarn dev
-```
+1. Clone the repository: $ git clone ```bash https://github.com/FabianJuarez182/Lab9_calculator.git ```
+2. Install dependencies:```bash yarn install ```
+3. Start the development server: ```bash yarn dev ```
 
 ## Tests
 
-```bash
 1. Run tests
-`$ yarn test
+```bash
+$ yarn test
 ```
 ### Rubric
 - [x] (40 puntos) [Criterio subjetivo] Diseño de su interfaz
