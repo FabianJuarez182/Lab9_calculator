@@ -63,15 +63,19 @@ function Calculator() {
         : typeof evaluatedValue === 'number'
         ? evaluatedValue.toFixed(7)
         : ''
-      // Verificar si el resultado es negativo
       const isNegative = Number(result) < 0
 
-      // Mostrar "ERROR" si el resultado es negativo
       if (isNegative) {
         setValue('ERROR')
       } else {
-        // Limitar la longitud del resultado a 9 caracteres
-        const truncatedResult = result.length > 9 ? 'ERROR' : result
+        let truncatedResult = result.length > 9 ? 'ERROR' : result
+        if (value.includes('%')) {
+          const parts = value.split('%')
+          const dividend = parseFloat(parts[0])
+          const divisor = parseFloat(parts[1])
+          const modulo = (dividend * divisor) / 100
+          truncatedResult = modulo.toFixed(7).toString()
+        }
         setValue(truncatedResult)
       }
     } catch (error) {
