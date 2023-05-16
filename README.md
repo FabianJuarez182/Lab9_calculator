@@ -22,3 +22,11 @@ Link to try it out: https://jua21440calculator.netlify.app
 1. Run tests
 `$ yarn test
 ```
+### Heading
+- [x] (40 puntos) [Criterio subjetivo] Diseño de su interfaz
+- [x] (50 puntos) Implementación de +5 tests
+- [x] (15 puntos) Código es compliant con eslint-airbnb y la regla para puntos y comas fue definida
+- [x] (20 puntos) Implementación del punto decimal
+- [x] (30 puntos) Implementación de la división
+- [x] (10 puntos) Implementación del módulo
+- [x] (20 puntos) Implementación del negado o no negado "+/-"
